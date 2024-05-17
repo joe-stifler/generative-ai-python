@@ -473,6 +473,7 @@ class ChatSession:
              generation_config: Overrides for the model's generation config.
              safety_settings: Overrides for the model's safety settings.
              stream: If True, yield response chunks as they are generated.
+             request_options: Options for the request.
         """
         if self.enable_automatic_function_calling and stream:
             raise NotImplementedError(
